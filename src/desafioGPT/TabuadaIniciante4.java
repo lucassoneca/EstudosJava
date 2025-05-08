@@ -12,7 +12,7 @@ public class TabuadaIniciante4 {
 
         System.out.println("\nTabuada do " + numeroCalculo + ":");
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i <= 10; i++) {
             int resultado = numeroCalculo * i;
             System.out.println(numeroCalculo + " x " + i + " = " + resultado);
         }
