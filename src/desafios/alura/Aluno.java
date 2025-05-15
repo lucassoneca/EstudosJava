@@ -60,7 +60,7 @@ public class Aluno {
     public void calcularMedia() {
         double somaNotas = nota1 + nota2 + nota3 + nota4;
         double mediaNotas = somaNotas/4;
-        System.out.println("A média é " + mediaNotas);
+        System.out.printf("A média de " + getNome() + " é de: " + "%.2f", mediaNotas);
     }
 
     public static void main(String[] args) {
@@ -71,8 +71,6 @@ public class Aluno {
         System.out.println("Qual o nome do aluno?");
         String nomeAluno = atributosAluno.nextLine();
         media.setNome(nomeAluno);
-
-        System.out.println("Nome do aluno: " + media.getNome());
 
         media.setNota1(5.2);
         media.setNota2(6.4);
